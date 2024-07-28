@@ -4,16 +4,16 @@ Created on Sat Jul 27 00:02:50 2024
 
 @author: Omkar
 """
-import base64
+
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diabetes_model = pickle.load(open('D:/Projects/Multiple Disease Prediction/saved models/trained-model.sav', 'rb'))
+diabetes_model = pickle.load(open('trained-model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('D:/Projects/Multiple Disease Prediction/saved models/heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-parkinsons_model = pickle.load(open('D:/Projects/Multiple Disease Prediction/saved models/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
